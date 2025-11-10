@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Geethika Mayalavarapu — Creative Strategist</title>
+  <meta name="description" content="Geethika Mayalavarapu — Creative Strategist focused on copy and data driven ad creative for D2C and coaches." />
+  <meta name="author" content="Geethika Mayalavarapu" />
+  <link rel="icon" href="data:," />
+  <style>
+    :root{
+      --bg: #ffffff;
+      --card: #ffffff;
+      --text: #0f1720;
+      --muted: #6b7280;
+      --accent1: #06b6d4;
+      --accent2: #ff6b6b;
+      --accent3: #7c3aed;
+      --glass: rgba(255,255,255,0.7);
+      --radius: 14px;
+      --maxw: 1150px;
+      --mono: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:var(--mono);
+      background: linear-gradient(180deg,#fff 0%, #fbfdff 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding-bottom:60px;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block;border-radius:8px}
+    .container{max-width:var(--maxw);margin:0 auto;padding:36px 20px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:6px 0}
+    .brand{font-weight:800;font-size:18px;letter-spacing:-0.01em}
+    .role{font-size:13px;color:var(--muted)}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{font-size:14px;color:var(--muted);padding:8px 10px;border-radius:10px}
+    nav a:hover{background:rgba(12,12,12,0.03);color:var(--text)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;font-weight:700;cursor:pointer;border:none}
+    .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent3));color:white;box-shadow:0 8px 30px rgba(12,12,12,0.08)}
+    .btn-ghost{background:transparent;border:1px solid rgba(12,12,12,0.06);color:var(--text)}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:44px 0}
+    .headline{font-size:36px;font-weight:800;line-height:1.03;letter-spacing:-0.01em}
+    .sub{margin-top:14px;color:var(--muted);font-size:16px}
+    .pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+    .pill{padding:8px 12px;border-radius:999px;background:linear-gradient(180deg,rgba(12,12,12,0.03),rgba(12,12,12,0.02));font-weight:600;font-size:13px;color:var(--muted)}
+    .hero-right{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,251,255,0.9));padding:18px;border-radius:16px;box-shadow:0 14px 40px rgba(12,12,12,0.06)}
+    .hero-metrics{display:flex;gap:12px;justify-content:space-between;align-items:center}
+    .metric{flex:1;text-align:center;padding:6px;border-radius:10px}
+    .metric h3{font-size:20px;margin-bottom:4px}
+    .muted{color:var(--muted)}
+    section{padding:44px 0;border-top:1px solid rgba(12,12,12,0.04)}
+    h2{font-size:20px;margin-bottom:10px;font-weight:800}
+    .lead-sm{color:var(--muted);font-size:15px;margin-bottom:14px}
+    .about{display:flex;gap:26px;align-items:flex-start}
+    .about-left{flex:1}
+    .about-right{width:420px}
+    .video-frame{background:linear-gradient(180deg,#fff,#fbfbff);height:240px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(12,12,12,0.04);color:var(--muted)}
+    .case-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .card{background:white;border-radius:14px;padding:18px;box-shadow:0 14px 40px rgba(12,12,12,0.05);border:1px solid rgba(12,12,12,0.03)}
+    .card h3{font-size:16px;margin-bottom:8px}
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:linear-gradient(90deg, rgba(6,182,212,0.12), rgba(124,58,237,0.08));font-weight:700;font-size:13px;color:var(--text);margin-right:8px;margin-top:8px}
+    .samples-intro{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .filters{display:flex;gap:8px;align-items:center}
+    .filter-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(12,12,12,0.06);background:white;cursor:pointer}
+    .grid-samples{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .sample{background:linear-gradient(180deg,#fff,#fcfdff);border-radius:12px;padding:12px;box-shadow:0 10px 30px rgba(12,12,12,0.04);cursor:pointer;transition:transform .18s ease}
+    .sample:hover{transform:translateY(-6px)}
+    .sample-title{font-weight:700;margin-bottom:8px}
+    .sample-copy{font-size:14px;color:var(--muted);min-height:48px}
+    .sample-meta{display:flex;gap:8px;margin-top:10px;font-size:13px;color:var(--muted)}
+    .flow{display:flex;gap:10px;flex-wrap:wrap}
+    .flow-card{background:linear-gradient(90deg, rgba(124,58,237,0.06), rgba(6,182,212,0.04));padding:12px;border-radius:10px;font-weight:700}
+    .tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .tool{padding:8px 10px;border-radius:8px;background:white;border:1px solid rgba(12,12,12,0.04);font-weight:700;color:var(--muted)}
+    .big{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .big-figure{font-size:56px;font-weight:900;line-height:1}
+    .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:320px}
+    .thumb{height:72px;background:linear-gradient(180deg,#f7f8fb,#ffffff);border-radius:10px;box-shadow:inset 0 -6px 14px rgba(12,12,12,0.02)}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .skill{background:linear-gradient(180deg,#fff,#fcfcff);padding:12px;border-radius:10px;font-weight:700;border:1px solid rgba(12,12,12,0.03)}
+    .contact-row{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .contact-left{font-weight:700}
+    .contact-right{display:flex;gap:10px;align-items:center}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center;padding-top:20px}
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:9999}
+    .modal.show{display:flex}
+    .modal-card{background:white;border-radius:12px;max-width:920px;width:100%;padding:18px;box-shadow:0 30px 80px rgba(12,12,12,0.3)}
+    .modal-header{display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .close{background:transparent;border:none;font-weight:800;font-size:20px;cursor:pointer}
+    .modal-body{margin-top:12px}
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr;gap:20px}
+      .about{flex-direction:column}
+      .case-row{grid-template-columns:1fr}
+      .grid-samples{grid-template-columns:1fr 1fr}
+      .skills{grid-template-columns:1fr 1fr}
+      .thumbs{width:100%}
+    }
+    @media (max-width:560px){
+      .grid-samples{grid-template-columns:1fr}
+      .hero-right{width:100%}
+      .big-figure{font-size:44px}
+      .headline{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="brand">Geethika Mayalavarapu</div>
+        <div class="role">Creative Strategist copy focused</div>
+      </div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#samples">Ad Samples</a>
+        <a href="#ai">AI Workflow</a>
+        <a href="#ads">500+ Ads</a>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="mailto:mayalavarapugeethika@gmail.com">Hire Me</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home" aria-label="Hero">
+      <div>
+        <div class="headline">Creative Strategist who turns data into scroll stopping ads.</div>
+        <div class="sub">I write hooks scripts and landing page copy that deliver measurable results for D2C skincare coaches and niche lifestyle brands. I read the numbers and use them to make creative decisions that scale.</div>
+
+        <div class="pills">
+          <div class="pill">D2C</div>
+          <div class="pill">Dating coaches</div>
+          <div class="pill">Career coaches</div>
+          <div class="pill">Occult lifestyle</div>
+          <div class="pill">Skincare</div>
+          <div class="pill">Performance copy</div>
+        </div>
+
+        <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="#work">View case studies</a>
+          <a class="btn btn-ghost" href="#samples">Explore ad samples</a>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-hidden="false">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div style="font-weight:800">Quick stats</div>
+          <div class="muted">Updated 2025</div>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <h3>500+</h3>
+            <div class="muted">ads created in 12 months</div>
+          </div>
+          <div class="metric">
+            <h3>₹1L+</h3>
+            <div class="muted">weekly scaling creatives</div>
+          </div>
+          <div class="metric">
+            <h3>42%</h3>
+            <div class="muted">top hook rate</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;border-top:1px dashed rgba(12,12,12,0.05);padding-top:12px">
+          <div style="font-weight:700">Get in touch</div>
+          <div class="muted" style="margin-top:6px">mayalavarapugeethika@gmail.com</div>
+          <div style="margin-top:6px"><a href="https://www.linkedin.com/in/geethika-mayalavarapu-77a88333b" target="_blank" rel="noopener">linkedin.com/in/geethika-mayalavarapu</a></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="lead-sm">I combine creative instincts with performance data. I write scripts and copy that hook the audience and then I use metrics to refine and scale. My work sits at the crossroads of creative storytelling and measurable growth.</p>
+
+      <div class="about">
+        <div class="about-left">
+          <p style="font-weight:800;margin-bottom:8px">What I bring to the table</p>
+          <ul style="color:var(--muted);list-style:disc;padding-left:18px;line-height:1.6">
+            <li>Hook first writing and creative frameworks that capture attention</li>
+            <li>Landing page copy and funnel messaging that moves people to action</li>
+            <li>Data led creative decisions driven by CTR hook rate and CPA</li>
+            <li>AI assisted ideation and prompt engineering to scale creative output</li>
+          </ul>
+
+          <div style="margin-top:14px">
+            <a class="btn btn-primary" href="#samples">See ad samples</a>
+            <a class="btn btn-ghost" href="#contact" style="margin-left:10px">Work with me</a>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="video-frame" id="videoPlaceholder">
+            <div style="text-align:center">
+              <div style="font-weight:700">Video introduction</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">Add your 30 to 60 second intro here</div>
+            </div>
+          </div>
+          <div style="font-size:13px;color:var(--muted);margin-top:10px;text-align:right">I will add my video explaining my experience</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Creative that scaled — backed by data</h2>
+      <p class="lead-sm">Three campaigns. Three audiences. One result. Better creative decisions based on real metrics.</p>
+
+      <div class="case-row" role="list">
+        <article class="card">
+          <h3>Love School — Dating coach</h3>
+          <div class="meta">Goal: Get L1 workshop registrations. Client target CPA ₹900</div>
+
+          <div style="margin-top:10px">
+            <span class="badge">₹820 CPA achieved</span>
+            <span class="badge">₹2,40,000 spent on one creative</span>
+            <span class="badge">42.15% hook rate</span>
+            <span class="badge">1.62% CTR</span>
+          </div>
+
+          <p class="meta" style="margin-top:12px">What I did: I wrote scripts and copy led creative direction then iterated using performance signals to scale the best ideas.</p>
+          <p style="margin-top:8px" class="muted">Landing page: <a href="https://workshop.schooloflove.co.in/love-magnet-workshop-fb-v2/" target="_blank" rel="noopener">Love Magnet Workshop</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Career coach — Bollywood campaign</h3>
+          <div class="meta">Strategy: Use movie moments and cultural anchors to map job pain points to creative hooks.</div>
+
+          <div style="margin-top:10px">
+            <span class="badge">₹1,00,000+ spend in one week</span>
+            <span class="badge">1.12% CTR</span>
+          </div>
+
+          <p class="meta" style="margin-top:12px">What I did: I built angle frameworks and wrote high impact statics and scripts that used cultural familiarity to boost attention.</p>
+        </article>
+
+        <article class="card">
+          <h3>D2C Skincare</h3>
+          <div class="meta">Goal: Profit driven scaling</div>
+
+          <div style="margin-top:10px">
+            <span class="badge">3+ ROAS</span>
+            <span class="badge">Audience led creative testing</span>
+          </div>
+
+          <p class="meta" style="margin-top:12px">What I did: I crafted product belief stacks and conversion copy for the funnel and optimized creatives based on landing page metrics.</p>
+          <p style="margin-top:8px" class="muted">Bridge page example: <a href="https://calmosis-bridge.netlify.app/natural-wellness?fbclid=IwY2xjawN_RVVleHRuA2FlbQIxMABicmlkETE1TVpoVk1UbktMQWFkQmYzc3J0YwZhcHBfaWQPNTQxNjM5NDkzODg5MDI1AAEeEK6j4MCcllDTIDy2XXd3iM-o3O-_NxLlwYQDRJ0tLC_WGvmTPExsQE7Dfk4_aem_OcEUcIqI7zUywjgC5YI3cA" target="_blank" rel="noopener">Bridge page</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="samples">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <div>
+          <h2>Ad samples and copy</h2>
+          <p class="lead-sm">Interactive gallery of scripts statics and winning copies. Click any card to view details and performance notes.</p>
+        </div>
+        <div class="filters">
+          <button class="filter-btn" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="video">Video</button>
+          <button class="filter-btn" data-filter="static">Static</button>
+          <button class="filter-btn" data-filter="landing">Landing</button>
+        </div>
+      </div>
+
+      <div class="grid-samples" id="samplesGrid" style="margin-top:18px">
+        <!-- Statics (converted to direct view links via Drive uc?export=view&id=FILEID) -->
+        <div class="sample" data-type="static" data-title="Static 1" data-img="https://drive.google.com/uc?export=view&id=16dTmo3urO4jFQF496N2YZM3co-UMoDQ1" onclick="openModal(this)">
+          <div class="sample-title">Static — 1</div>
+          <div class="sample-copy">Static creative — visual A. (Spend data available on request)</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 2" data-img="https://drive.google.com/uc?export=view&id=1zNrW4bU1D8F1W2xTGQo6Cqty_1HRL83J" onclick="openModal(this)">
+          <div class="sample-title">Static — 2</div>
+          <div class="sample-copy">Static creative — visual B.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 3" data-img="https://drive.google.com/uc?export=view&id=15m2uqxLNtNmxwhKedQYlG2hJb3mhc_HP" onclick="openModal(this)">
+          <div class="sample-title">Static — 3</div>
+          <div class="sample-copy">Static creative — visual C.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 4" data-img="https://drive.google.com/uc?export=view&id=17qTtr7qC30odz22bGsLdPdHjC70LVFfE" onclick="openModal(this)">
+          <div class="sample-title">Static — 4</div>
+          <div class="sample-copy">Static creative — visual D.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 5" data-img="https://drive.google.com/uc?export=view&id=141PyvF98JnOk80cnX1w1x4jRFQQ63lSC" onclick="openModal(this)">
+          <div class="sample-title">Static — 5</div>
+          <div class="sample-copy">Static creative — visual E.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 6" data-img="https://drive.google.com/uc?export=view&id=1X52Ho7iD7SxAFonGC48njj0Kp0VZSjLB" onclick="openModal(this)">
+          <div class="sample-title">Static — 6</div>
+          <div class="sample-copy">Static creative — visual F.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 7" data-img="https://drive.google.com/uc?export=view&id=1b3NMbbfiwXu9Y85HKDWoCKLn_KYsxHJQ" onclick="openModal(this)">
+          <div class="sample-title">Static — 7</div>
+          <div class="sample-copy">Static creative — visual G.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 8" data-img="https://drive.google.com/uc?export=view&id=1xVRJ4FzRg1LYx9FnKeftO_SsoMN2VP1Q" onclick="openModal(this)">
+          <div class="sample-title">Static — 8</div>
+          <div class="sample-copy">Static creative — visual H.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="static" data-title="Static 9" data-img="https://drive.google.com/uc?export=view&id=1ypSOJxwhOsCD9ZYh2iXQy4SVBgfXHstP" onclick="openModal(this)">
+          <div class="sample-title">Static — 9</div>
+          <div class="sample-copy">Static creative — visual I.</div>
+          <div class="sample-meta">Format: Static • Source: Drive</div>
+        </div>
+
+        <!-- Videos (Drive preview embeds) -->
+        <div class="sample" data-type="video" data-title="Video 1 — Campaign Reel" data-video="https://drive.google.com/file/d/12xrEforkFVUtEcJ0ZLdo-RGHLYqgjdF0/preview" onclick="openModal(this)">
+          <div class="sample-title">Video — Campaign Reel 1</div>
+          <div class="sample-copy">Winning creative reel used for Love School testing.</div>
+          <div class="sample-meta">Format: Video • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="video" data-title="Video 2 — Case Ad" data-video="https://drive.google.com/file/d/195SAfxzAh7tOl0cU2WcMaqjaKVO7cp3I/preview" onclick="openModal(this)">
+          <div class="sample-title">Video — Case Ad 2</div>
+          <div class="sample-copy">High retention ad tested across audiences.</div>
+          <div class="sample-meta">Format: Video • Source: Drive</div>
+        </div>
+
+        <div class="sample" data-type="video" data-title="Video 3 — UGC Style" data-video="https://drive.google.com/file/d/1xemVLR1OeFVMh-bvDaFb47OhR_89d8Tq/preview" onclick="openModal(this)">
+          <div class="sample-title">Video — UGC Style</div>
+          <div class="sample-copy">UGC format ad with testimonial style script.</div>
+          <div class="sample-meta">Format: Video • Source: Drive</div>
+        </div>
+
+        <!-- Landing pages (will open modal with external link) -->
+        <div class="sample" data-type="landing" data-title="Love Magnet Workshop — Landing" data-link="https://workshop.schooloflove.co.in/love-magnet-workshop-fb-v2/" onclick="openModal(this)">
+          <div class="sample-title">Landing — Love Magnet Workshop</div>
+          <div class="sample-copy">L1 conversion focused landing. Open link to view full page.</div>
+          <div class="sample-meta">Type: Landing • External link</div>
+        </div>
+
+        <div class="sample" data-type="landing" data-title="Natural Wellness — Bridge" data-link="https://calmosis-bridge.netlify.app/natural-wellness?fbclid=IwY2xjawN_RVVleHRuA2FlbQIxMABicmlkETE1TVpoVk1UbktMQWFkQmYzc3J0YwZhcHBfaWQPNTQxNjM5NDkzODg5MDI1AAEeEK6j4MCcllDTIDy2XXd3iM-o3O-_NxLlwYQDRJ0tLC_WGvmTPExsQE7Dfk4_aem_OcEUcIqI7zUywjgC5YI3cA" onclick="openModal(this)">
+          <div class="sample-title">Bridge — Natural Wellness</div>
+          <div class="sample-copy">Bridge page used in funnel testing. Click to view live page.</div>
+          <div class="sample-meta">Type: Bridge • External link</div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:14px;color:var(--muted)">How to add more: paste your public Drive links or YouTube/Vimeo links. I will add them for you or you can edit the HTML cards.</div>
+    </section>
+
+    <section id="ai">
+      <h2>AI workflow</h2>
+      <p class="lead-sm">AI helps speed ideation and testing. I blend prompt engineering and human insight to generate high quality ideas and then validate with data.</p>
+
+      <div class="flow" style="margin-top:10px">
+        <div class="flow-card">Insight mining with Perplexity and Ads Library</div>
+        <div class="flow-card">Hook generation with ChatGPT and Claude</div>
+        <div class="flow-card">Script and copy development with ChatGPT and Jasper</div>
+        <div class="flow-card">Visual concepting with MidJourney and Runway</div>
+        <div class="flow-card">Iterate and scale using data plus prompt tweaks</div>
+      </div>
+
+      <div class="tools" style="margin-top:12px">
+        <div class="tool">ChatGPT</div>
+        <div class="tool">Claude</div>
+        <div class="tool">Perplexity</div>
+        <div class="tool">Jasper</div>
+        <div class="tool">MidJourney</div>
+        <div class="tool">Runway</div>
+        <div class="tool">CapCut</div>
+      </div>
+    </section>
+
+    <section id="ads">
+      <h2>Mass testing and creative velocity</h2>
+      <div class="big" style="margin-top:14px;align-items:center">
+        <div>
+          <div class="big-figure">500+</div>
+          <div style="font-weight:700;margin-top:6px">ads created in one year</div>
+          <div class="muted" style="margin-top:8px">This volume helped me learn creative fatigue signals angle decay and how to read hook performance to scale spend safely.</div>
+        </div>
+
+        <div class="thumbs">
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills and tools</h2>
+      <div class="skills" style="margin-top:12px">
+        <div class="skill">Performance copy and hooks</div>
+        <div class="skill">Landing page copy and CRO</div>
+        <div class="skill">Creative direction and shoot briefs</div>
+        <div class="skill">AI prompt engineering</div>
+        <div class="skill">Creative metric analysis</div>
+        <div class="skill">Ad format ideation</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap">
+        <div>
+          <h2>Work with me</h2>
+          <div class="muted" style="margin-top:8px">Email for collaborations and briefs</div>
+          <div style="margin-top:8px;font-weight:800">mayalavarapugeethika@gmail.com</div>
+        </div>
+
+        <div style="display:flex;gap:10px;align-items:center">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/geethika-mayalavarapu-77a88333b" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-primary" href="mailto:mayalavarapugeethika@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top:30px">
+      <div class="muted">© Geethika Mayalavarapu — Creative Strategist. Built with care and a lot of testing.</div>
+    </footer>
+  </div>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <div style="font-weight:800" id="modalTitle">Sample title</div>
+        <button class="close" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <div style="color:var(--muted)" id="modalMeta">Meta</div>
+        <div style="margin-top:12px" id="modalCopy">Copy content here</div>
+        <div style="margin-top:12px" id="modalMedia"></div>
+        <div style="margin-top:14px;color:var(--muted);font-size:13px">Performance notes and why this creative worked will appear here.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(el) {
+      const modal = document.getElementById('modal');
+      const title = el.getAttribute('data-title') || 'Untitled';
+      const type = el.getAttribute('data-type') || 'static';
+      const copy = el.querySelector('.sample-copy') ? el.querySelector('.sample-copy').innerText : '';
+      const meta = el.querySelector('.sample-meta') ? el.querySelector('.sample-meta').innerText : '';
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalCopy').innerText = copy;
+      document.getElementById('modalMeta').innerText = meta;
+      document.getElementById('modalMedia').innerHTML = '';
+
+      const videoUrl = el.getAttribute('data-video'); // Drive preview embed or YouTube embed
+      const imgSrc = el.getAttribute('data-img'); // direct image
+      const link = el.getAttribute('data-link'); // external link
+
+      if (videoUrl) {
+        document.getElementById('modalMedia').innerHTML = '<div style="margin-top:12px"><iframe width="100%" height="360" src="'+videoUrl+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+      } else if (imgSrc) {
+        document.getElementById('modalMedia').innerHTML = '<div style="margin-top:12px"><img src="'+imgSrc+'" alt="'+title+'" style="border-radius:8px;max-height:360px;object-fit:cover;width:100%"/></div>';
+      } else if (link) {
+        document.getElementById('modalMedia').innerHTML = '<div style="margin-top:12px;padding:18px;border-radius:8px;background:linear-gradient(90deg,rgba(6,182,212,0.06),rgba(124,58,237,0.04));text-align:left"><div style="font-weight:700;margin-bottom:8px">Open landing page</div><div style="margin-bottom:8px;color:var(--muted)">'+link+'</div><a class="btn btn-primary" href="'+link+'" target="_blank" rel="noopener">Open link</a></div>';
+      } else {
+        document.getElementById('modalMedia').innerHTML = '<div style="margin-top:12px;padding:20px;border-radius:8px;background:linear-gradient(90deg,rgba(6,182,212,0.06),rgba(124,58,237,0.04));color:var(--text);text-align:center">Media not added yet. Replace data attributes to show video or image.</div>';
+      }
+
+      modal.classList.add('show');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.remove('show');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    document.getElementById('modal').addEventListener('click', function(e){
+      if (e.target === this) closeModal();
+    });
+    document.querySelectorAll('.filter-btn').forEach(btn=>{
+      btn.addEventListener('click', function(){
+        const filter = this.getAttribute('data-filter');
+        document.querySelectorAll('#samplesGrid .sample').forEach(card=>{
+          if (filter === 'all' || card.getAttribute('data-type') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
